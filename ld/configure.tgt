@@ -351,6 +351,10 @@ hppa*-*-netbsd*)	targ_emul=hppanbsd
 			;;
 hppa*-*-openbsd*)	targ_emul=hppaobsd
 			;;
+i[3-7]86-*-basix*)	targ_emul=elf_i386_basix
+			targ_extra_emuls=elf_i386
+			targ64_extra_emuls="elf_x86_64_basix elf_x86_64"
+			;;
 i[3-7]86-*-nto-qnx*)	targ_emul=i386nto
 			;;
 i[3-7]86-*-go32)	targ_emul=i386go32
@@ -1001,6 +1005,9 @@ vax-*-netbsd*)		targ_emul=elf32vax
 vax-*-linux-*)		targ_emul=elf32vax
 			;;
 visium-*-elf)		targ_emul=elf32visium
+			;;
+x86_64-*-basix*)	targ_emul=elf_x86_64_basix
+			targ_extra_emuls="elf_i386_basix elf_x86_64 elf_i386"
 			;;
 x86_64-*-rdos*)		targ_emul=elf64rdos
 			;;
